@@ -58,6 +58,7 @@ func _ready() -> void:
 	var options = range(myWorld["Towns"].size());
 	print(currentRouteCount)
 	for extraRoute in range(routeCount - currentRouteCount):
+		#maxRoutesPerTown
 		var townA = obtainRandomValidNeighborNode(maxRoutesPerTown, options)
 		var townB = obtainRandomValidNeighborNode(maxRoutesPerTown, options)
 		if townA != null and townB != null:
